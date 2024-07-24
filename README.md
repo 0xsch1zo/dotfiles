@@ -10,7 +10,10 @@ git clone https://github.com/sentientbottleofwine/dotfiles.git
 cd dotfiles/
 stow .
 ```
-That <b>should</b> work
+That **should** work
 ## Some screenshots
 ![A shitty desktop](./assests/20240721_16h23m58s_grim.png)
 ![A shitty desktop 2](./assests/20240721_16h38m20s_grim.png)
+
+## Credits
+- [Dreams of Autonomy](https://github.com/dreamsofautonomy) for the oh-my-posh config which I "borrowed", and the zsh config, off of which I was heavily inspired by.
