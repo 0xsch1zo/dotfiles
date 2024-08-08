@@ -1,14 +1,14 @@
 # Welcome to hell - aka My dotfiles
 ## Setup
-It's best to do that on a clean install. Because stow creates symlinks to the dotfiles directory where these files are needed. If someone somehow is reading this that is not me please do backup your configs.
-Download stow
+It's best to do that on a clean install. Because stow creates symlinks to the dotfiles directory where these files are needed.
+If someone somehow is reading this that is not me please do backup your configs. Before deploying consider changing the monitor settings in `.config/hypr/monitors.conf`.
 ```
 sudo pacman -S stow
 ```
 ```
 git clone https://github.com/sentientbottleofwine/dotfiles.git
 cd dotfiles/
-stow .
+stow -t ~/ .
 ```
 That **should** work
 ## Some screenshots
