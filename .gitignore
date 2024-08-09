@@ -1,2 +1,5 @@
 .config/vesktop/*
 !.config/vesktop/themes
+*.old
+*.bak
+
