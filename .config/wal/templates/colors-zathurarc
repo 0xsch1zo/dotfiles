@@ -1,0 +1,30 @@
+set recolor "true"
+
+set completion-bg rgb({background.rgb})
+set completion-fg rgb({foreground.rgb})
+set completion-group-bg rgb({background.rgb})
+set completion-group-fg rgb({color2.rgb})
+set completion-highlight-bg rgb({foreground.rgb})
+set completion-highlight-fg rgb({background.rgb})
+
+set recolor-lightcolor rgb({background.rgb})
+set recolor-darkcolor rgb({foreground.rgb})
+set default-bg rgb({background.rgb})
+
+set inputbar-bg rgb({background.rgb})
+set inputbar-fg rgb({foreground.rgb})
+set notification-bg rgb({background.rgb})
+set notification-fg rgb({foreground.rgb})
+set notification-error-bg rgb({color1.rgb})
+set notification-error-fg rgb({foreground.rgb})
+set notification-warning-bg rgb({color1.rgb})
+set notification-warning-fg rgb({foreground.rgb})
+set statusbar-bg rgb({background.rgb})
+set statusbar-fg rgb({foreground.rgb})
+set index-bg rgb({background.rgb})
+set index-fg rgb({foreground.rgb})
+set index-active-bg rgb({foreground.rgb})
+set index-active-fg rgb({background.rgb})
+set render-loading-bg rgb({background.rgb})
+set render-loading-fg rgb({foreground.rgb})
+
