@@ -1,7 +1,9 @@
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=${HISTSIZE}
-export PATH="$PATH:/home/sentience/sources/projects/bin"
+export GOPATH=$HOME/go
+export PATH="${PATH}:/home/sentience/sources/projects/bin:${GOPATH}/bin"
+#eval $(keychain --eval id_git -q)
 setopt autocd extendedglob
 setopt appendhistory
 setopt sharehistory
