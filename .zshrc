@@ -15,7 +15,6 @@ bindkey -a 'm' history-search-backward
 bindkey -a 'n' history-search-forward
 
 # Pywal
-(cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors-tty.sh
 
 # Aliases
