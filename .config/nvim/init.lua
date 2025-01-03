@@ -23,3 +23,5 @@ require("config.dap")
 require("config.misc")
 
 require("config.harpoon")
+
+require("config.undotree")
