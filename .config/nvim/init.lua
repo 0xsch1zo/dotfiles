@@ -25,3 +25,5 @@ require("config.misc")
 require("config.harpoon")
 
 require("config.undotree")
+
+require("config.vim-fugitive")
