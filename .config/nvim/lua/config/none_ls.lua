@@ -8,4 +8,6 @@ null_ls.setup({
         }),
     }
 })
+
 vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {})
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
