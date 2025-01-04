@@ -2,12 +2,16 @@ HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=${HISTSIZE}
 export GOPATH=$HOME/go
-export PATH="${PATH}:/home/sentience/sources/projects/bin:${GOPATH}/bin"
+export PATH="${PATH}:${HOME}/sources/projects/bin:${GOPATH}/bin:${HOME}/.config/tmux/plugins/tmuxifier/bin"
+export EDITOR="nvim"
 #eval $(keychain --eval id_git -q)
 setopt autocd extendedglob
 setopt appendhistory
 setopt sharehistory
 setopt hist_ignore_space
+
+# Tmuxifier
+eval "$(tmuxifier init -)"
  
 # Keybinds
 bindkey -v
