@@ -7,6 +7,7 @@
   caps
   a s d f 
   j k l ;
+  lshift rshift lctrl rctrl lalt ralt lmet rmet
 )
 
 (defvar
@@ -31,4 +32,5 @@
   esc
   @a-mod @s-mod @d-mod @f-mod 
   @j-mod @k-mod @l-mod @;-mod
+  XX XX XX XX XX XX XX XX 
 )
