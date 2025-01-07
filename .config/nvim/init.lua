@@ -27,3 +27,5 @@ require("config.harpoon")
 require("config.undotree")
 
 require("config.vim-fugitive")
+
+require("config.smear-cursor")
