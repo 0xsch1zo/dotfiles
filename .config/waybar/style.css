@@ -1,96 +1,57 @@
 @import "/home/sentience/.cache/wal/colors-waybar.css";
 
-@define-color bg #11111B;
-@define-color darkGray #181825;
-@define-color gray #1D1D2D;
-@define-color lightGray #303143;
-@define-color white #303143;
-
 * {
     font-family: "JetBrains Mono NF";
 }
 
 window#waybar {
-    background-color: @bg;
-    color: #ffffff;
+    background: transparent;
+    margin-bottom: 5px;
 }
 
-#custom-leftArrowDarkGray,
-#custom-rightArrowDarkGray,
-#custom-leftArrowInverseDarkGray,
-#custom-rightArrowInverseDarkGray {
-    font-size: 12pt;
-    background: transparent;
-    color: @darkGray;
+#workspaces,
+#cava,
+#clock {
+    background-color: @background;
+    box-shadow: 0 0 3px 3px @color4;
+    border-bottom: 1px solid @color4;
+    margin-bottom: 6px;
 }
 
-#custom-leftArrowGray,
-#custom-rightArrowGray,
-#custom-leftArrowInverseGray,
-#custom-rightArrowInverseGray {
-    font-size: 12pt;
-    background: transparent;
-    color: @gray;
-}
-
-#custom-leftArrowLightGray,
-#custom-rightArrowLightGray,
-#custom-leftArrowInverseLightGray,
-#custom-rightArrowInverseLightGray {
-    font-size: 12pt;
-    background: transparent;
-    color: @lightGray;
-}
-
-#custom-leftArrowWhite,
-#custom-rightArrowWhite {
-    font-size: 12pt;
-    background: transparent;
-    color: @white;
+#workspaces {
+    border-right: 1px solid @color4;
+    margin-right: 10px;
+    border-radius: 0 0 10px 0;
 }
 
 #workspaces button {
-    min-height: 0px;
-    font-size: 1px;
-    margin: 7px 3px;
-    padding: 0px 0px;
+    min-height: 4px;
+    min-width: 4px;
+    margin: 5px 3px;
+    font-size: 0;
+    padding: 3px;
     background-color: @color4;
     transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
-    min-height: 0px;
-    font-size: 1px;
-    padding: 0px 13px;
-    background-color: @color5;
+    padding: 0px 10px;
+    background-color: @color6;
     transition: all 0.3s ease-in-out;
 }
 
-#temperature,
-#cpu,
-#memory,
-#clock.time {
-
+#cava {
+    border-radius: 0 0 10px 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 7px;
+    margin-right: 7px;
+    border-left: 1px solid @color4;
+    border-right: 1px solid @color4;
 }
 
-#pulseaudio,
-#workspaces,
-#battery,
-#cpu {
-    background-color: @darkGray;
-}
-
-#network,
-#temperature,
-#memory {
-    background-color: @gray;
-}
-
-#clock.calendar,
-#clock.time {
-    background-color: @lightGray;
-}
-
-#custom-logo {
-    background-color: @white;
+#clock {
+    border-left: 1px solid @color4;
+    border-radius: 0 0 0 10px;
+    margin-left: 10px;
 }

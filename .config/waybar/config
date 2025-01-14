@@ -1,74 +1,55 @@
 // -*- mode: jsonc -*-
 {
-    "margin-top": 3,
-    "margin-left": 3,
-    "margin-right": 3,
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    //"margin-left": 790,
+    //"margin-right": 790,
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 10, // Waybar height (to be removed for auto height)
     "reload_style_on_change": true,
+    "fixed_center": true,
     
 
     "modules-left": [
-        "hyprland/workspaces",
-        "custom/rightArrowDarkGray",
-		"cava"
+        "hyprland/workspaces"
     ],
     "modules-center": [
-        "custom/leftArrowDarkGray",
-        "cpu",
-        "custom/leftArrowInverseDarkGray",
-        "custom/leftArrowGray",
-        "memory",
-        "custom/leftArrowInverseGray",
-        "custom/leftArrowLightGray",
-        "clock#time",
-        "custom/leftArrowInverseLightGray",
-        "custom/leftArrowWhite",
-        "custom/logo",
-        "custom/rightArrowWhite",
-        "custom/rightArrowInverseLightGray",
-        "clock#calendar",
-        "custom/rightArrowLightGray",
-        "custom/rightArrowInverseGray",
-        "temperature",
-        "custom/rightArrowGray",
-        "custom/rightArrowInverseDarkGray",
-        "battery",
-        "custom/rightArrowDarkGray"
+		"cava"
     ],
     "modules-right": [
-        "custom/leftArrowGray",
-        "network",
-        "custom/leftArrowInverseGray",
-        "custom/leftArrowDarkGray",
-        "pulseaudio",
+        "clock"
     ],
 
     // Modules
     "hyprland/workspaces": {
-        "format": "",
+        "format": ""
     },
 
     "cava": {
+        "method": "pipewire",
+        "bar_delimiter": 0,
+        "bars": 16,
+        // Hardcoded colors
         "format-icons": [
-            "<span foreground='#cba6f7'>▁</span>",
-            "<span foreground='#cba6f7'>▂</span>",
-            "<span foreground='#cba6f7'>▃</span>",
-            "<span foreground='#cba6f7'>▄</span>",
-            "<span foreground='#89b4fa'>▅</span>",
-            "<span foreground='#89b4fa'>▆</span>",
-            "<span foreground='#89b4fa'>▇</span>",
-            "<span foreground='#89b4fa'>█</span>"
-        ],
+            "<span foreground='#9ECE6A'>▁</span>",
+            "<span foreground='#9ECE6A'>▂</span>",
+            "<span foreground='#7DCFFF'>▃</span>",
+            "<span foreground='#7DCFFF'>▄</span>",
+            "<span foreground='#7AA2F7'>▅</span>",
+            "<span foreground='#7AA2F7'>▆</span>",
+            "<span foreground='#BB9AF7'>▇</span>",
+            "<span foreground='#BB9AF7'>█</span>"
+        ]
     },
 
     "cpu": {
-        "format": "{usage}%  ",
+        "format": "{usage}%  "
     },
     
     "memory": {
-        "format": "{percentage}% ",
+        "format": "{percentage}% "
     },
     
     "network": {
@@ -86,20 +67,30 @@
         "critical-threshold": 80
     },
 
-    "clock#time": {
-        "format": "{:%H:%M}  ",
-    },
-
-    "clock#calendar": {
-        "format": "{:%d-%m}  ",
-        "tooltip-format": "{calendar}",
+    "clock": {
+        "format": " {:%H:%M}  ",
+        "format-alt": "{:%A, %B %d, %Y (%R)}  ",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
-            "mode": "month",
+            "mode"          : "month",
+            "mode-mon-col"  : 3,
+            "weeks-pos"     : "right",
+            "on-scroll"     : 1,
+            // Hardcoded colors
             "format": {
-                "months": "<span><b>{}</b></span>",
-                "weeks": "<span><b>W{}</b></span>",
-                "today": "<span><b><u>{}</u></b></span>"
-            },
+                "months":     "<span color='#9ECE6A'><b>{}</b></span>",
+                "days":       "<span color='#A9B1D6'><b>{}</b></span>",
+                "today":      "<span color='#F7768E'><b><u>{}</u></b></span>",
+                "weeks":      "<span color='#7DCFFF'><b>W{}</b></span>",
+                "weekdays":   "<span color='#BB9AF7'><b>{}</b></span>"
+            }
+        },
+        "actions":  {
+            "on-click-right": "mode",
+            "on-scroll-up": "tz_up",
+            "on-scroll-down": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
         }
     },
 
@@ -132,80 +123,5 @@
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         "format-icons": [" ", " ", " ", " ", " "]
-    },
-
-    "custom/logo": {
-        "format": " 󰣇 ",
-        "tooltip": false
-    },
-
-    "custom/leftArrowDarkGray": {
-        "format": "",
-        "tooltip": false
-    },
-
-    "custom/rightArrowDarkGray": {
-        "format": "",
-        "tooltip": false
-    },
-
-    "custom/leftArrowInverseDarkGray": {
-        "format": "",
-        "tooltip": false
-    },
-
-    "custom/rightArrowInverseDarkGray": {
-        "format": "",
-        "tooltip": false
-    },
-
-    "custom/leftArrowGray": {
-        "format": "",
-        "tooltip": false
-    },
-
-    "custom/rightArrowGray": {
-        "format": "",
-        "tooltip": false
-    },
-
-    "custom/leftArrowInverseGray": {
-        "format": "",
-        "tooltip": false
-    },
-
-    "custom/rightArrowInverseGray": {
-        "format": "",
-        "tooltip": false
-    },
-
-    "custom/leftArrowLightGray": {
-        "format": "",
-        "tooltip": false
-    },
-
-    "custom/rightArrowLightGray": {
-        "format": "",
-        "tooltip": false
-    },
-
-    "custom/leftArrowInverseLightGray": {
-        "format": "",
-        "tooltip": false
-    },
-
-    "custom/rightArrowInverseLightGray": {
-        "format": "",
-        "tooltip": false
-    },
-
-    "custom/leftArrowWhite": {
-        "format": "",
-        "tooltip": false
-    },
-
-    "custom/rightArrowWhite": {
-        "format": "",
-        "tooltip": false
-    },
+    }
 }
