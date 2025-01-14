@@ -13,13 +13,13 @@ window#waybar {
 #cava,
 #clock {
     background-color: @background;
-    box-shadow: 0 0 3px 3px @color4;
-    border-bottom: 1px solid @color4;
+    box-shadow: 0 0 3px 3px @color6;
+    border-bottom: 1px solid @color6;
     margin-bottom: 6px;
 }
 
 #workspaces {
-    border-right: 1px solid @color4;
+    border-right: 1px solid @color6;
     margin-right: 10px;
     border-radius: 0 0 10px 0;
 }
@@ -30,7 +30,7 @@ window#waybar {
     margin: 5px 3px;
     font-size: 0;
     padding: 3px;
-    background-color: @color4;
+    background-color: @color6;
     transition: all 0.3s ease-in-out;
 }
 
@@ -46,12 +46,12 @@ window#waybar {
     padding-right: 7px;
     margin-left: 7px;
     margin-right: 7px;
-    border-left: 1px solid @color4;
-    border-right: 1px solid @color4;
+    border-left: 1px solid @color6;
+    border-right: 1px solid @color6;
 }
 
 #clock {
-    border-left: 1px solid @color4;
+    border-left: 1px solid @color6;
     border-radius: 0 0 0 10px;
     margin-left: 10px;
 }
