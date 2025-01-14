@@ -33,14 +33,14 @@
         "bars": 16,
         // Hardcoded colors
         "format-icons": [
-            "<span foreground='#9ECE6A'>▁</span>",
-            "<span foreground='#9ECE6A'>▂</span>",
-            "<span foreground='#7DCFFF'>▃</span>",
-            "<span foreground='#7DCFFF'>▄</span>",
-            "<span foreground='#7AA2F7'>▅</span>",
-            "<span foreground='#7AA2F7'>▆</span>",
-            "<span foreground='#BB9AF7'>▇</span>",
-            "<span foreground='#BB9AF7'>█</span>"
+            "<span foreground='#7aa2f7'>▁</span>",
+            "<span foreground='#7dcfff'>▂</span>",
+            "<span foreground='#bb9af7'>▃</span>",
+            "<span foreground='#9ece6a'>▄</span>",
+            "<span foreground='#e0af68'>▅</span>",
+            "<span foreground='#ff9e64'>▆</span>",
+            "<span foreground='#f7768e'>▇</span>",
+            "<span foreground='#db4b4b'>█</span>"
         ]
     },
 
