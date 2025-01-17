@@ -29,3 +29,5 @@ require("config.undotree")
 require("config.vim-fugitive")
 
 require("config.smear-cursor")
+
+require("config.nvim-cmp")
