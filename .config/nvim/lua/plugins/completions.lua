@@ -8,5 +8,6 @@ return {
         }
     },
     "petertriho/cmp-git",
-    "hrsh7th/cmp-nvim-lsp"
+    "hrsh7th/cmp-nvim-lsp",
+    "hrsh7th/cmp-path"
 }
