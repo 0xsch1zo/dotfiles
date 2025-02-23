@@ -22,8 +22,9 @@ bindkey -a 'n' history-search-forward
 source ~/.cache/wal/colors-tty.sh
 
 # Aliases
-alias cat='bat'
-alias ls='lsd'
+command -v 'bat' 2&>1 > /dev/null && alias cat='bat'
+command -v 'lsd' 2&>1 > /dev/null && alias ls='lsd'
+command -v 'grc' 2&>1 > /dev/null && alias go='grc go'
 alias grep='grep --color=auto'
 
 export FZF_DEFAULT_OPTS="--color=16"
