@@ -3,7 +3,7 @@
 /* ---- Configuration ---- */
 
 configuration {
-	  modi:                       "drun";
+	modi:                       "drun,calc";
     show-icons:                 false;
     font:                       "JetBrains Mono Nerd Font 10";
 }
@@ -66,6 +66,7 @@ entry {
     background-color:           @background-alt;
     text-color:                 inherit;
     cursor:                     text;
+    width: 44%;
     placeholder:                "  Search"; // << Search symbol
     placeholder-color:           inherit;
 }
