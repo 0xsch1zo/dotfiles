@@ -1,4 +1,4 @@
-local cmp = require 'cmp'
+--[[local cmp = require 'cmp'
 
 require("luasnip.loaders.from_vscode").lazy_load()
 
@@ -46,4 +46,4 @@ cmp.setup.cmdline({ '/', '?' }, {
     sources = {
         { name = 'buffer' }
     }
-})
+})]]
