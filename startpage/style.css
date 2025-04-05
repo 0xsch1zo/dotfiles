@@ -38,22 +38,29 @@ body {
     margin-bottom: 50px;
 }
 
+.slide-border-color {
+    border: 0.5em solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(#1a1b26, #1a1b26), 
+                    linear-gradient(to right, transparent 50%, var(--fg) 50%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    background-size: 200% 100%;
+    transition: background-position ease-in-out 500ms;
+}
 
-input {
-    background-color: #1a1b26;
-    border: none;
-    font-size: 22px;
-    color: var(--fg);
-    border-radius: 10px;
-    border: 2px solid transparent;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.slide-border-color:focus-within {
+    background-position: -100% 0;
+}
+
+#searchbar {
+    all: unset;
+    width: inherit;
+    height: inherit;
     padding: 10px;
-    width: 70%;
-} input:focus {
-    border-color: var(--fg);
-    outline: none;
+    font-size: 22px;
+    dispay: block;
+    color: var(--fg);
 }
 
 a {
