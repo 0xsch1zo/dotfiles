@@ -1,0 +1,102 @@
+:root {
+    --bg: #1e1e2e;
+    --fg: #c6d0f5;
+    --second-bg: #11111b;
+    --blue: #8caaee;
+    --violet: #BB9AF7;
+    
+}
+
+body {
+    background-image: url("assets/topography.svg");
+    font-family: monospace;
+    text-color: var(--fg);
+    background-color: var(--second-bg);
+    margin: auto;
+    width: 50%;
+}
+
+.content {
+    margin-top: 12%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    color: var(--fg);
+}
+
+#clock {
+    font-size: 60px;
+}
+
+#date {
+    font-size: 30px;
+    text-align: center;
+}
+
+#time {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+input {
+    background-color: #1a1b26;
+    border: none;
+    font-size: 22px;
+    color: var(--fg);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 70%;
+} input:focus {
+    border-color: var(--fg);
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+    display: block;
+    display: inline-block;
+    padding: 2px 0px;
+}
+
+a:hover {
+    color: var(--violet)
+}
+
+a::before {
+    content: "> ";
+}
+
+
+#links {
+    color: var(--fg);
+    margin-top: 25px;
+    margin-left: 10%;
+    display: flex;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+
+.list {
+    background-color: transparent;
+    border-radius: 15px;
+    margin: 10px;
+    flex: 1 1 0%;
+}
+
+ul {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#st {
+    margin: 0px;
+}
