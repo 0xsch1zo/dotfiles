@@ -12,7 +12,7 @@
 
 /* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!!! */
 
-@import url('https://refact0r.github.io/midnight-discord/midnight.css');
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 
 /* customize things here */
 :root {
@@ -34,6 +34,7 @@
 	--accent-3: hsl(221, 89%, 70%); /* accent buttons */
 	--accent-4: hsl(221, 89%, 70%); /* accent buttons when hovered */
 	--accent-5: hsl(221, 89%, 85%); /* accent buttons when clicked */
+    --accent-new: var(--accent-2); /* stuff that's normally red like mute/deafen buttons */
 	--mention: hsla(221, 89%, 80%, 0.1); /* mentions & mention messages */
 	--mention-hover: hsla(221, 89%, 80%, 0.05); /* mentions & mention messages when hovered */
 
@@ -50,8 +51,8 @@
 	--bg-2: hsl(233, 18%, 16%); /* dark buttons */
 	--bg-3: hsl(233, 18%, 13%); /* spacing, secondary elements */
 	--bg-4: hsl(233, 18%, 10%); /* main background color */
-	--hover: hsla(230, 20%, 40%, 0.1); /* channels and buttons when hovered */
-	--active: hsla(220, 20%, 40%, 0.2); /* channels and buttons when clicked or selected */
+	--hover: hsla(233, 20%, 40%, 0.1); /* channels and buttons when hovered */
+	--active: hsla(233, 20%, 40%, 0.2); /* channels and buttons when clicked or selected */
 	--message-hover: hsla(220, 0%, 0%, 0.1); /* messages when hovered */
 
 	/* amount of spacing and padding */
