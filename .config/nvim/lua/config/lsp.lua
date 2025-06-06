@@ -1,7 +1,8 @@
 require("mason").setup()
 
 require("mason-lspconfig").setup({
-    ensure_installed = { "lua_ls", "clangd", "neocmake", "gopls", "ts_ls", "templ", "html", "htmx", "tailwindcss" }
+    ensure_installed = { "lua_ls", "clangd", "neocmake", "gopls", "ts_ls", "templ", "html", "htmx", "tailwindcss", "rust_analyzer" },
+    automatic_enable = true,
 })
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -30,7 +31,7 @@ require("lspconfig")["lua_ls"].setup({
     end,
     settings = {
         Lua = {}
-    }
+    },
 })
 
 require("lspconfig")["clangd"].setup({
@@ -66,7 +67,6 @@ require 'lspconfig'.htmx.setup({
 })
 
 require 'lspconfig'.tailwindcss.setup({
-    on_attach = on_attach,
     capabilities = capabilities,
     filetypes = { "templ", "astro", "javascript", "typescript", "react" },
     settings = {
@@ -84,3 +84,7 @@ vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {})
 vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, {})
 vim.api.nvim_create_autocmd({ "BufWritePre" }, { pattern = { "*.templ" }, callback = vim.lsp.buf.format })
+vim.lsp.inlay_hint.enable(true)
+vim.diagnostic.config({
+    virtual_text = true,
+})

@@ -39,7 +39,7 @@ cmp.setup.filetype('gitcommit', {
         { name = 'buffer' },
     })
 })
-require("cmp_git").setup()
+require("cmp_git").setup({})
 
 cmp.setup.cmdline({ '/', '?' }, {
     mapping = cmp.mapping.preset.cmdline(),
