@@ -106,5 +106,5 @@ vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, {})
 vim.api.nvim_create_autocmd({ "BufWritePre" }, { pattern = { "*.templ" }, callback = vim.lsp.buf.format })
 -- vim.lsp.inlay_hint.enable(true)
 vim.diagnostic.config({
-    vrtual_text = true,
+    virtual_text = true,
 })
