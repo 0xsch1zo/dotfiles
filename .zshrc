@@ -2,7 +2,7 @@ HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=${HISTSIZE}
 export GOPATH=$HOME/go
-export PATH="${PATH}:${HOME}/sources/projects/bin:${GOPATH}/bin:${XDG_CONFIG_HOME:-${HOME}/.config}/tmux/plugins/tmuxifier/bin"
+export PATH="${PATH}:${HOME}/sources/projects/bin:${GOPATH}/bin:${XDG_CONFIG_HOME:-${HOME}/.config}/tmux/plugins/tmuxifier/bin:${HOME}/.cargo/bin"
 export EDITOR="nvim"
 export MANPAGER="nvim +Man!"
 #eval $(keychain --eval id_git -q)
