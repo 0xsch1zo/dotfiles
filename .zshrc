@@ -2,7 +2,7 @@ HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=${HISTSIZE}
 export GOPATH=$HOME/go
-export PATH="${PATH}:${HOME}/sources/projects/bin:${GOPATH}/bin:${XDG_CONFIG_HOME:-${HOME}/.config}/tmux/plugins/tmuxifier/bin:${HOME}/.cargo/bin"
+export PATH="${PATH}:${HOME}/sources/projects/bin:${GOPATH}/bin:${XDG_CONFIG_HOME:-${HOME}}/.cargo/bin"
 export EDITOR="nvim"
 export MANPAGER="nvim +Man!"
 #eval $(keychain --eval id_git -q)
@@ -11,9 +11,6 @@ setopt appendhistory
 setopt sharehistory
 setopt hist_ignore_space
 
-# Tmuxifier
-eval "$(tmuxifier init -)"
- 
 # Keybinds
 #bindkey -v
 bindkey -a 'm' history-search-backward
@@ -28,7 +25,7 @@ command -v 'lsd' > /dev/null && alias ls='lsd'
 command -v 'grc' > /dev/null && alias go='grc go'
 alias grep='grep --color=auto'
 
-export FZF_DEFAULT_OPTS="--color=16"
+export FZF_DEFAULT_OPTS="--color=16,border:gray"
 
 zstyle ':fzf-tab:*' fzf-flags $(echo $FZF_DEFAULT_OPTS)
 zstyle :compinstall filename "${HOME}/.zshrc"

@@ -1,4 +1,5 @@
-#import = ["/home/sentience/.cache/wal/colors.toml"]
+[general]
+import = ["/home/sentience/.cache/wal/colors.toml"]
 
 [font]
 size = 11
