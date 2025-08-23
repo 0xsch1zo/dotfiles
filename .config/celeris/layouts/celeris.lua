@@ -1,0 +1,12 @@
+local celeris = require("celeris")
+
+local session_root = "/home/sentience/sources/projects/celeris"
+local session = celeris.Session.new({ root = session_root })
+
+local nvim = celeris.Window.new(session, { name = "nvim" })
+nvim:default_pane():run_command("nvim")
+
+local build = celeris.Window.new(session, {})
+build:default_pane():split("horizontal", {})
+
+session:attach()

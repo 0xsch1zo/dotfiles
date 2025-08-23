@@ -1,0 +1,10 @@
+depth = 10
+search_subdirs = false
+
+search_roots = [
+    { path = "/home/sentience/sources/projects/", depth = 1 }, 
+    { path = "/home/sentience/dotfiles" }
+] 
+
+excludes = ["_deps"]
+disable_template = false
