@@ -54,6 +54,9 @@ zinit light Aloxaf/fzf-tab
 zinit snippet OMZP::sudo
 zinit snippet OMZP::command-not-found
 
+# zinit ice depth=1
+# zinit light jeffreytse/zsh-vi-mode
+
 autoload -U compinit && compinit
 
 zinit cdreplay -q
@@ -63,3 +66,8 @@ eval "$(oh-my-posh init zsh --config ${XDG_CONFIG_HOME:-${HOME}/.config}/oh-my-p
 
 # fzf
 eval "$(fzf --zsh --color=16)"
+
+# if tmux is not running launch celeris
+if [[ ! `tmux server-info` ]]; then
+    celeris switch -l
+fi
