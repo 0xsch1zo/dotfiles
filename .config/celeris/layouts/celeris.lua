@@ -9,4 +9,5 @@ nvim:default_pane():run_command("nvim")
 local build = celeris.Window.new(session, {})
 build:default_pane():split("horizontal", {})
 
+nvim:select()
 session:attach()

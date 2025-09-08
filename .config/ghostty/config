@@ -11,3 +11,4 @@ config-file = ?/home/sentience/.cache/wal/background-ghosty
 # Misc
 window-decoration = false
 resize-overlay = never
+confirm-close-surface = false
