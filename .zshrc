@@ -25,6 +25,13 @@ command -v 'lsd' > /dev/null && alias ls='lsd'
 command -v 'grc' > /dev/null && alias go='grc go'
 alias grep='grep --color=auto'
 
+# Utilities
+alias urldecode='python3 -c "import sys, urllib.parse as ul; \
+    print(ul.unquote_plus(sys.argv[1]))"'
+
+alias urlencode='python3 -c "import sys, urllib.parse as ul; \
+    print (ul.quote_plus(sys.argv[1]))"'
+
 export FZF_DEFAULT_OPTS="--color=16,border:gray"
 
 zstyle ':fzf-tab:*' fzf-flags $(echo $FZF_DEFAULT_OPTS)
