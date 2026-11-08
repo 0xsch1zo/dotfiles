@@ -1,7 +1,20 @@
 require("mason").setup()
 
 require("mason-lspconfig").setup({
-    ensure_installed = { "lua_ls", "clangd", "neocmake", "gopls", "ts_ls", "templ", "html", "htmx", "tailwindcss", "rust_analyzer" },
+    ensure_installed = {
+        "lua_ls",
+        "clangd",
+        "neocmake",
+        "gopls",
+        "ts_ls",
+        "templ",
+        "html",
+        "htmx",
+        "tailwindcss",
+        "rust_analyzer",
+        "cssls",
+        "custom_elements_ls"
+    },
     automatic_enable = false,
 })
 
@@ -96,6 +109,14 @@ require 'lspconfig'.rust_analyzer.setup {
             enable = true
         },
     }
+}
+
+require 'lspconfig'.cssls.setup {
+    capabilities = capabilities,
+}
+
+require 'lspconfig'.custom_elements_ls.setup {
+    capabilities = capabilities,
 }
 
 vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})

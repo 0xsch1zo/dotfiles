@@ -1,0 +1,31 @@
+(defwindow bar
+    :monitor 0 
+    :geometry (geometry
+                :height "3%"
+                :width "20%"
+                :anchor "top center")
+    :stacking "fg"
+    :exclusive true
+  (box
+      :orientation "horizontal"
+      ;:halign "center"
+    (workspaces)
+    (time)))
+
+(defpoll clock
+    :interval "1s"
+  `date +%H:%M`)
+
+(defwidget time []
+  (button 
+    clock))
+
+
+(deflisten workspaces :initial "[]" "bash ~/.config/eww/scripts/get-workspaces")
+(deflisten currentWorkspace :initial "1" "bash ~/.config/eww/scripts/get-active-workspace")
+(defvar count "[1, 2, 3]")
+(defwidget workspaces []
+  (box
+    :space-evenly true
+    (for workspace in count 
+        (button :class "workspace-entry ${workspace.id == currentWorkspace ? "current" : ""}" ))))

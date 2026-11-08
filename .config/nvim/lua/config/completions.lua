@@ -9,8 +9,14 @@ cmp.setup({
         end,
     },
     window = {
-        completion = cmp.config.window.bordered(),
-        documentation = cmp.config.window.bordered(),
+        completion = cmp.config.window.bordered {
+            border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+            winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
+        },
+        documentation = cmp.config.window.bordered {
+            winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
+            border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+        },
     },
     mapping = cmp.mapping.preset.insert({
         ['<C-b>'] = cmp.mapping.scroll_docs(-4),

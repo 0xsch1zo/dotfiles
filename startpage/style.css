@@ -4,7 +4,7 @@
     --second-bg: #11111b;
     --blue: #8caaee;
     --violet: #BB9AF7;
-    
+
 }
 
 body {
@@ -41,8 +41,8 @@ body {
 .slide-border-color {
     border: 0.5em solid transparent;
     border-radius: 30px;
-    background-image: linear-gradient(#1a1b26, #1a1b26), 
-                    linear-gradient(to right, transparent 50%, var(--fg) 50%);
+    background-image: linear-gradient(#1a1b26, #1a1b26),
+        linear-gradient(to right, transparent 50%, var(--fg) 50%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
     background-size: 200% 100%;
@@ -59,7 +59,7 @@ body {
     height: inherit;
     padding: 10px;
     font-size: 22px;
-    dispay: block;
+    display: block;
     color: var(--fg);
 }
 
