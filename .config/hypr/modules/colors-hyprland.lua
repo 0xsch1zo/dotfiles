@@ -1,0 +1,1 @@
+/home/sentience/.cache/wal/colors-hyprland.lua
